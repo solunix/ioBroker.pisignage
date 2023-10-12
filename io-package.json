@@ -1,0 +1,109 @@
+{
+	"common": {
+		"name": "pisignage",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "PiSignage API",
+		"titleLang": {
+			"en": "PiSignage API",
+			"de": "PiSignage API",
+			"ru": "PiSignage API",
+			"pt": "PiSignage API",
+			"nl": "PiSignage API",
+			"fr": "PiSignage API",
+			"it": "PiSignage API",
+			"es": "PiSignage API",
+			"pl": "PiSignage API",
+			"zh-cn": "PiSignage API"
+		},
+		"desc": {
+			"en": "Remote Control a PiSignage Player",
+			"de": "Remote Control a PiSignage Player",
+			"ru": "Remote Control a PiSignage Player",
+			"pt": "Remote Control a PiSignage Player",
+			"nl": "Remote Control a PiSignage Player",
+			"fr": "Remote Control a PiSignage Player",
+			"it": "Remote Control a PiSignage Player",
+			"es": "Remote Control a PiSignage Player",
+			"pl": "Remote Control a PiSignage Player",
+			"zh-cn": "Remote Control a PiSignage Player"
+		},
+		"authors": [
+			"solunix <github@solunix.de>"
+		],
+		"keywords": [
+			"PiSignage",
+			"Signage",
+			"API"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "pisignage.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/solunix/ioBroker.pisignage/main/admin/pisignage.png",
+		"readme": "https://github.com/solunix/ioBroker.pisignage/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "multimedia",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"PlayerAddress": "127.0.0.1",
+		"PlayerPort": "80",
+		"Username": "pi",
+		"Password": "pi"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

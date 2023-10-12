@@ -1,0 +1,7 @@
+{
+	"pisignage adapter settings": "Ajustes del adaptador para pisignage",
+	"PlayerAddress": "IP Adress of PiSignage",
+	"PlayerPort": "Port where Player API listens",
+	"Username": "Player Username",
+	"Password": "Player Password"
+}

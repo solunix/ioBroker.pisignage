@@ -1,0 +1,26 @@
+{
+	"i18n": true,
+	"type": "panel",
+	"items": {
+		"PlayerAddress": {
+			"type": "text",
+			"label": "IP Adress of PiSignage",
+			"newLine": true
+		},
+		"PlayerPort": {
+			"type": "text",
+			"label": "Port where Player API listens",
+			"newLine": true
+		},
+		"Username": {
+			"type": "text",
+			"label": "Player Username",
+			"newLine": true
+		},
+		"Password": {
+			"type": "text",
+			"label": "Player Password",
+			"newLine": true
+		}
+	}
+}
